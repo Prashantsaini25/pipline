@@ -19,6 +19,6 @@ spec:
         image: nginx:1.14.2
         env:
         - name: nginx
-          value: [ "$(my)" ]
+          value: "$(my)" 
         ports:
         - containerPort: 80

@@ -4,6 +4,7 @@ metadata:
   name: nginx-deployment
   labels:
     app: nginx
+    pod: $my
 spec:
   replicas: 3
   selector:

@@ -10,10 +10,12 @@ spec:
   selector:
     matchLabels:
       app: nginx
+      pod: [ "$my" ]
   template:
     metadata:
       labels:
         app: nginx
+        pod: [ "$my" ]
     spec:
       containers:
       - name: nginx
